@@ -1,0 +1,140 @@
+2024-04-19 00:37:25,651 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-19 00:37:25,652 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-04-19 00:37:42,227 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-19 00:37:42,227 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-04-19 00:39:14,934 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '0b0b276c-e781-4fe0-a2d6-b96c402368ec', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': True, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:39:14,934 INFO root Request: {'session': {'message_id': 0, 'session_id': '0b0b276c-e781-4fe0-a2d6-b96c402368ec', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': True, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу показать город или сказать расстояние между городами!'}}
+2024-04-19 00:39:14,935 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:39:14] "POST /post HTTP/1.1" 200 -
+2024-04-19 00:39:42,431 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '0b0b276c-e781-4fe0-a2d6-b96c402368ec', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'москва донское', 'original_utterance': 'Москва донское', 'nlu': {'tokens': ['москва', 'донское'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:39:42,679 ERROR Alice_and_maps Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 40, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + \
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "KeyError") to str
+2024-04-19 00:39:42,682 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:39:42] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2024-04-19 00:40:18,040 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '0b0b276c-e781-4fe0-a2d6-b96c402368ec', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'москва воронеж', 'original_utterance': 'Москва Воронеж', 'nlu': {'tokens': ['москва', 'воронеж'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'воронеж'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:40:18,339 ERROR Alice_and_maps Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 43, in handle_dialog
+    distance = get_distance(get_coordinates(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\geo.py", line 56, in get_distance
+    lon1 = math.radians(p1[0])
+                        ~~^^^
+TypeError: 'KeyError' object is not subscriptable
+2024-04-19 00:40:18,340 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:40:18] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2024-04-19 00:41:37,964 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '0b0b276c-e781-4fe0-a2d6-b96c402368ec', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:41:38,105 ERROR Alice_and_maps Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 40, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + \
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "KeyError") to str
+2024-04-19 00:41:38,106 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:41:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2024-04-19 00:41:52,392 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-19 00:41:52,392 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-04-19 00:41:58,286 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'bdc3e4b4-a1cc-4f3b-8d2a-a6c800636dc7', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:41:58,287 INFO root Request: {'session': {'message_id': 0, 'session_id': 'bdc3e4b4-a1cc-4f3b-8d2a-a6c800636dc7', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу показать город или сказать расстояние между городами!'}}
+2024-04-19 00:41:58,287 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:41:58] "POST /post HTTP/1.1" 200 -
+2024-04-19 00:42:10,548 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'bdc3e4b4-a1cc-4f3b-8d2a-a6c800636dc7', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'вася', 'original_utterance': 'Вася', 'nlu': {'tokens': ['вася'], 'entities': [{'type': 'YANDEX.FIO', 'tokens': {'start': 0, 'end': 1}, 'value': {'first_name': 'вася'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:42:10,548 INFO root Request: {'session': {'message_id': 1, 'session_id': 'bdc3e4b4-a1cc-4f3b-8d2a-a6c800636dc7', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Вы не написали название ни одного города!'}}
+2024-04-19 00:42:10,548 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:42:10] "POST /post HTTP/1.1" 200 -
+2024-04-19 00:42:18,140 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': 'bdc3e4b4-a1cc-4f3b-8d2a-a6c800636dc7', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:42:18,598 ERROR Alice_and_maps Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 40, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + \
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "KeyError") to str
+2024-04-19 00:42:18,600 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:42:18] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2024-04-19 00:42:44,514 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-19 00:42:44,514 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-04-19 00:42:48,683 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '0f1f734c-7ced-448d-8bd0-3ef2783d4d0f', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': True, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:42:48,684 INFO root Request: {'session': {'message_id': 0, 'session_id': '0f1f734c-7ced-448d-8bd0-3ef2783d4d0f', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': True, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу показать город или сказать расстояние между городами!'}}
+2024-04-19 00:42:48,685 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:42:48] "POST /post HTTP/1.1" 200 -
+2024-04-19 00:43:08,056 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '0f1f734c-7ced-448d-8bd0-3ef2783d4d0f', 'skill_id': '03d819b8-8c95-4fb5-aa7c-ac6495607792', 'user': {'user_id': '11666878BFD6A9134B7EDCCF0B6C7936B97BFF556B05E5D0369CF0370453E77B'}, 'application': {'application_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'new': False, 'user_id': '2321B10B7B68547D242B551B5C0BDFE42811D06104F060B76CB6D1291622364E'}, 'request': {'command': 'москва воронеж', 'original_utterance': 'Москва Воронеж', 'nlu': {'tokens': ['москва', 'воронеж'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'воронеж'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2024-04-19 00:43:35,411 ERROR Alice_and_maps Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\Alice_and_maps.py", line 43, in handle_dialog
+    distance = get_distance(get_coordinates(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\02_Alice\Алиса и карты\geo.py", line 56, in get_distance
+    lon1 = math.radians(p1[0])
+                        ~~^^^
+TypeError: 'KeyError' object is not subscriptable
+2024-04-19 00:43:36,962 INFO werkzeug 127.0.0.1 - - [19/Apr/2024 00:43:36] "[35m[1mPOST /post HTTP/1.1[0m" 500 -

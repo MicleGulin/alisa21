@@ -1,0 +1,390 @@
+2023-04-03 23:16:59,397 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:16:59,397 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:17:27,173 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:17:27,174 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:17:51,732 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:17:51,733 INFO root Request: {'session': {'message_id': 0, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:17:51,733 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:17:51] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:20:33,501 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'америка', 'original_utterance': 'Америка', 'nlu': {'tokens': ['америка'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'country': 'сша'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:20:33,501 INFO root Request: {'session': {'message_id': 1, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:20:33,501 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:20:33] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:20:42,455 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'вашингтон', 'original_utterance': 'Вашингтон', 'nlu': {'tokens': ['вашингтон'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'вашингтон'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:20:42,793 INFO root Request: {'session': {'message_id': 2, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Этот город в стране - Соединённые Штаты Америки'}}
+2023-04-03 23:20:42,794 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:20:42] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:20:56,568 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 3, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва донское', 'original_utterance': 'Москва Донское', 'nlu': {'tokens': ['москва', 'донское'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:20:56,679 INFO root Request: {'session': {'message_id': 3, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Этот город в стране - Россия'}}
+2023-04-03 23:20:56,679 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:20:56] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:07,414 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 4, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва липецк', 'original_utterance': 'Москва, Липецк', 'nlu': {'tokens': ['москва', 'липецк'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'липецк'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:07,710 INFO root Request: {'session': {'message_id': 4, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Расстояние между этими городами: 373 км.'}}
+2023-04-03 23:21:07,710 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:07] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:20,036 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 5, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва донское', 'original_utterance': 'Москва, Донское', 'nlu': {'tokens': ['москва', 'донское'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:20,207 INFO root Request: {'session': {'message_id': 5, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Этот город в стране - Россия'}}
+2023-04-03 23:21:20,208 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:20] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:26,296 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 6, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'донское', 'original_utterance': 'Донское', 'nlu': {'tokens': ['донское'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:26,296 INFO root Request: {'session': {'message_id': 6, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:21:26,296 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:26] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:36,119 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 7, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва воронеж', 'original_utterance': 'Москва Воронеж', 'nlu': {'tokens': ['москва', 'воронеж'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'воронеж'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:36,397 INFO root Request: {'session': {'message_id': 7, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Расстояние между этими городами: 467 км.'}}
+2023-04-03 23:21:36,398 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:36] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:50,014 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 8, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'мос ва ва', 'original_utterance': 'Мос ва ва', 'nlu': {'tokens': ['мос', 'ва', 'ва'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:50,014 INFO root Request: {'session': {'message_id': 8, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:21:50,014 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:50] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:21:58,989 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 9, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва воронеж тула', 'original_utterance': 'Москва Воронеж Тула', 'nlu': {'tokens': ['москва', 'воронеж', 'тула'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'воронеж'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 2, 'end': 3}, 'value': {'city': 'тула'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:21:58,989 INFO root Request: {'session': {'message_id': 9, 'session_id': 'fdfb0b02-b580-4b68-aa85-f78f69c20422', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Слишком много городов!'}}
+2023-04-03 23:21:58,989 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:21:58] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:36:38,867 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:36:38,867 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:36:52,395 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:36:52,395 INFO root Request: {'session': {'message_id': 0, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:36:52,395 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:36:52] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:36:58,182 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'vjcrdf', 'original_utterance': 'Vjcrdf', 'nlu': {'tokens': ['vjcrdf'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:36:58,182 INFO root Request: {'session': {'message_id': 1, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:36:58,182 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:36:58] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:37:03,289 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:37:03,456 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_geo_info(cities[0], 'country')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 21, in get_geo_info
+    return json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+           ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:37:03,475 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:37:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:37:31,536 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'вы', 'original_utterance': 'вы', 'nlu': {'tokens': ['вы'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:37:31,536 INFO root Request: {'session': {'message_id': 2, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:37:31,536 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:37:31] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:37:44,937 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:37:44,938 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:38:00,344 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 3, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'воронеж', 'original_utterance': 'Воронеж', 'nlu': {'tokens': ['воронеж'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'воронеж'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:38:00,457 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_geo_info(cities[0], 'country')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 21, in get_geo_info
+    return json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+           ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:38:00,459 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:38:00] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:38:07,165 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 3, 'session_id': 'a924635c-61d3-40e3-bbe3-9803ae274cc2', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'воронеж москва', 'original_utterance': 'Воронеж Москва', 'nlu': {'tokens': ['воронеж', 'москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'воронеж'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:38:07,762 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 50, in handle_dialog
+    distance = get_distance(get_geo_info(cities[0], 'coordinates'), get_geo_info(cities[1], 'coordinates'))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 17, in get_geo_info
+    point_str = json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos']
+                ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:38:07,763 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:38:07] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:39:15,070 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '1ca780ee-e7fb-4e24-a361-2e6295e3921d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:39:15,070 INFO root Request: {'session': {'message_id': 0, 'session_id': '1ca780ee-e7fb-4e24-a361-2e6295e3921d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:39:15,070 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:39:15] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:39:20,727 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '1ca780ee-e7fb-4e24-a361-2e6295e3921d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:39:20,832 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_geo_info(cities[0], 'country')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 21, in get_geo_info
+    return json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+           ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:39:20,833 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:39:20] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:43:41,237 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:43:41,237 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:43:50,849 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '8b6c4a25-aab7-4d0f-b879-c4118f797332', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:43:50,849 INFO root Request: {'session': {'message_id': 0, 'session_id': '8b6c4a25-aab7-4d0f-b879-c4118f797332', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:43:50,850 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:43:50] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:43:58,217 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '8b6c4a25-aab7-4d0f-b879-c4118f797332', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:43:58,310 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 22, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 45, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_geo_info(cities[0], 'country')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 21, in get_geo_info
+    return json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+           ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:43:58,312 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:43:58] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:44:22,868 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:44:22,868 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:44:30,306 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '0994088e-54ad-47b1-9cfa-1d21bace210d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:44:30,306 INFO root Request: {'session': {'message_id': 0, 'session_id': '0994088e-54ad-47b1-9cfa-1d21bace210d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:44:30,306 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:44:30] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:44:35,093 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '0994088e-54ad-47b1-9cfa-1d21bace210d', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:44:35,251 ERROR app_ver Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 22, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app_ver.py", line 45, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_geo_info(cities[0], 'country')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\geo_ver.py", line 22, in get_geo_info
+    return json['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+           ~~~~^^^^^^^^^^^^
+KeyError: 'response'
+2023-04-03 23:44:35,253 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:44:35] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:45:29,327 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:45:29,327 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:45:37,423 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'ca9c63cb-5b05-43ca-b0e8-14881faab6bf', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:45:37,423 INFO root Request: {'session': {'message_id': 0, 'session_id': 'ca9c63cb-5b05-43ca-b0e8-14881faab6bf', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:45:37,423 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:45:37] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:45:43,505 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'ca9c63cb-5b05-43ca-b0e8-14881faab6bf', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': False, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:45:43,636 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-03 23:45:43,638 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:45:43] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:46:17,552 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:46:17,552 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:46:31,955 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'c02ebcbc-8487-481f-b278-b3f78515e536', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:46:31,955 INFO root Request: {'session': {'message_id': 0, 'session_id': 'c02ebcbc-8487-481f-b278-b3f78515e536', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:46:31,955 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:46:31] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:46:37,011 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'c02ebcbc-8487-481f-b278-b3f78515e536', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:46:37,165 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-03 23:46:37,166 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:46:37] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:47:44,025 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': 'e4046629-32ac-4c8e-8d63-f556365389d7', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:47:44,025 INFO root Request: {'session': {'message_id': 0, 'session_id': 'e4046629-32ac-4c8e-8d63-f556365389d7', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:47:44,025 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:47:44] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:47:48,232 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': 'e4046629-32ac-4c8e-8d63-f556365389d7', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:47:48,401 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-03 23:47:48,402 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:47:48] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-03 23:48:04,576 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-03 23:48:04,576 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-03 23:48:09,071 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:48:09,071 INFO root Request: {'session': {'message_id': 0, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'new': True, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-03 23:48:09,072 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:48:09] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:48:13,300 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'ми', 'original_utterance': 'ми', 'nlu': {'tokens': ['ми'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:48:13,300 INFO root Request: {'session': {'message_id': 1, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:48:13,300 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:48:13] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:48:17,140 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'ям', 'original_utterance': 'яМ', 'nlu': {'tokens': ['ям'], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:48:17,141 INFO root Request: {'session': {'message_id': 2, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Ты не написал название не одного города!'}}
+2023-04-03 23:48:17,141 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:48:17] "POST /post HTTP/1.1" 200 -
+2023-04-03 23:48:20,745 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 3, 'session_id': '91371c78-3a8f-42ae-8346-49749eef1db5', 'skill_id': '3e6783f6-c48c-41db-97b8-69c76d37092a', 'user': {'user_id': 'E6C8FB0078797D738376388AFF2E9E1A3EB9C3515E95AD2A560F4F1FC6F52E1E'}, 'application': {'application_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF'}, 'user_id': '77493BEC7911645E99A752C4BF8A3640FAB37F54D30BBB67B6A4F3D49F8223CF', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-03 23:48:20,874 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-03 23:48:20,875 INFO werkzeug 127.0.0.1 - - [03/Apr/2023 23:48:20] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-04 17:14:10,426 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-04 17:14:10,427 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-04 17:19:32,878 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-04 17:19:32,878 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-04 17:19:44,780 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 0, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': True}, 'request': {'command': '', 'original_utterance': '', 'nlu': {'tokens': [], 'entities': [], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-04 17:19:44,781 INFO root Request: {'session': {'message_id': 0, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': True}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Я могу сказать в какой стране город или сказать расстояние между городами!'}}
+2023-04-04 17:19:44,781 INFO werkzeug 127.0.0.1 - - [04/Apr/2023 17:19:44] "POST /post HTTP/1.1" 200 -
+2023-04-04 17:19:51,378 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'request': {'command': 'липецк', 'original_utterance': 'Липецк', 'nlu': {'tokens': ['липецк'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'липецк'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-04 17:19:51,626 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-04 17:19:51,631 INFO werkzeug 127.0.0.1 - - [04/Apr/2023 17:19:51] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-04 17:20:01,997 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 1, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'request': {'command': 'липецк москва', 'original_utterance': 'Липецк Москва', 'nlu': {'tokens': ['липецк', 'москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'липецк'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-04 17:20:02,589 INFO root Request: {'session': {'message_id': 1, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Расстояние между этими городами: 373 км.'}}
+2023-04-04 17:20:02,590 INFO werkzeug 127.0.0.1 - - [04/Apr/2023 17:20:02] "POST /post HTTP/1.1" 200 -
+2023-04-04 17:20:09,309 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'request': {'command': 'москва', 'original_utterance': 'Москва', 'nlu': {'tokens': ['москва'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'москва'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-04 17:20:09,441 ERROR app Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Roaming\Python\Python311\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 23, in main
+    handle_dialog(response, request.json)
+  File "C:\Users\admin\YandexDisk\Банк программ\Python\2_год_2_семестр\Алиса — урок 2\app.py", line 46, in handle_dialog
+    res['response']['text'] = 'Этот город в стране - ' + get_country(cities[0])
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~
+TypeError: can only concatenate str (not "dict") to str
+2023-04-04 17:20:09,442 INFO werkzeug 127.0.0.1 - - [04/Apr/2023 17:20:09] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+2023-04-04 17:20:26,427 INFO root Request: {'meta': {'locale': 'ru-RU', 'timezone': 'UTC', 'client_id': 'ru.yandex.searchplugin/7.16 (none none; android 4.4.2)', 'interfaces': {'screen': {}, 'payments': {}, 'account_linking': {}}}, 'session': {'message_id': 2, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'request': {'command': 'липецк москва воронеж', 'original_utterance': 'Липецк Москва Воронеж', 'nlu': {'tokens': ['липецк', 'москва', 'воронеж'], 'entities': [{'type': 'YANDEX.GEO', 'tokens': {'start': 0, 'end': 1}, 'value': {'city': 'липецк'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 1, 'end': 2}, 'value': {'city': 'москва'}}, {'type': 'YANDEX.GEO', 'tokens': {'start': 2, 'end': 3}, 'value': {'city': 'воронеж'}}], 'intents': {}}, 'markup': {'dangerous_context': False}, 'type': 'SimpleUtterance'}, 'version': '1.0'}
+2023-04-04 17:20:26,427 INFO root Request: {'session': {'message_id': 2, 'session_id': '1e20917b-e16c-4faa-9d26-39917ae45485', 'skill_id': '064b0ffb-72fd-4ad9-a2af-2c745bb7f443', 'user': {'user_id': 'B77AC1E52AA4570D4238DC2EA6E8D94C583036D5C00B8E6FFA9DFDA523D8E5EB'}, 'application': {'application_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E'}, 'user_id': 'B4F0EB95A44B36C464C34D8F8E8C5895E0D58D6D7818151107CC7A5B8419475E', 'new': False}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Слишком много городов!'}}
+2023-04-04 17:20:26,427 INFO werkzeug 127.0.0.1 - - [04/Apr/2023 17:20:26] "POST /post HTTP/1.1" 200 -
