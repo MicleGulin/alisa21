@@ -32,6 +32,14 @@ def main():
 
 def handle_dialog(res, req):
     user_id = req['session']['user_id']
+
+    # Добавляем кнопку "Помощь" во все сообщения
+    res['response'].setdefault('buttons', [])
+    res['response']['buttons'].append({
+        'title': 'Помощь',
+        'hide': True
+    })
+
     if req['session']['new']:
         res['response']['text'] = 'Привет! Назови своё имя!'
         sessionStorage[user_id] = {
@@ -61,7 +69,14 @@ def handle_dialog(res, req):
                     'hide': True
                 }
             ]
+
     else:
+        if 'помощь' in req['request']['nlu']['tokens']:
+            res['response']['text'] = (
+                "Помощь по игре:\n"
+                "Твоя цель — угадать город по фото. У тебя есть 2! попытки на каждый город."
+            )
+            return
         # У нас уже есть имя, и теперь мы ожидаем ответ на предложение сыграть.
         # В sessionStorage[user_id]['game_started'] хранится True или False в зависимости от того,
         # начал пользователь игру или нет.
